@@ -101,7 +101,7 @@ class App extends React.Component {
 
     return (
       <div className="app">
-        <h1>Chat / Messaging App</h1>
+        <h1>[Work in progress]Chat / Messaging Application</h1>
         <h1>Timestamp: {Date.now()}</h1>
         <h1>Timestamp: {this.getTime()}</h1>
         {/* <h1>{new Date(Date).getTime().getMonth() + 1}</h1> */}
