@@ -88,13 +88,23 @@ class App extends React.Component {
     ));
   };
 
+  getTime = () => {
+    let dt = new Date(Date.now());
+
+    // let str1 =  `${dt.getMonth() + 1} / ${dt.getDate()} / ${dt.getFullYear()`;
+
+    return `[ ${dt.getHours()} : ${dt.getMinutes()} : ${dt.getSeconds()} ]`;
+  };
+
   render() {
     console.log("State:", this.state);
 
     return (
       <div className="app">
-        <h1> Wecome to the bloggin App </h1>
+        <h1>Chat / Messaging App</h1>
         <h1>Timestamp: {Date.now()}</h1>
+        <h1>Timestamp: {this.getTime()}</h1>
+        {/* <h1>{new Date(Date).getTime().getMonth() + 1}</h1> */}
         <form onSubmit={this.submit}>
           <div className="form-input">
             <input
